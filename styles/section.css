@@ -1,0 +1,56 @@
+/* 타이틀 테스트 더보기 공통 클래스 */
+.tit{
+    font-size: 50px;
+    line-height: 1.2;
+}
+
+.tit span{
+    display: block;
+}
+
+.tit span b{
+    font-weight: normal;
+}
+
+.tit span.en_s{
+    font-size: 22px;
+    font-weight: normal;
+}
+
+.txt p{
+    color: #888;
+    line-height: 1.6;
+    margin-bottom: 16px;
+}
+
+.txt p b{
+    font-weight: normal;
+}
+
+/* section visiual */ 
+section.visiual{
+    max-width: 1720px;
+    margin: auto;
+    overflow: hidden;
+}
+section.visiual .mainImg{
+    float: left;
+    width: 50%;
+}
+section.visiual .mainImg img{
+    width: 90%;
+}
+
+section.visiual .mainTxt{
+    float: left;
+    width: 50%;
+    margin-top: 180px;
+}
+
+section.visiual .mainTxt .tit{
+    font-size: 75px;
+}
+
+section.visiual .mainTxt .tit .gray{
+    color: #ccc;
+}
