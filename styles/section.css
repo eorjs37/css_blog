@@ -66,10 +66,6 @@ section .inner .box{
     width: 50%;
 }
 
-section .inner .box .img{
-    padding-top: 100px;
-}
-
 /* section visiual */ 
 section.visiual{
     max-width: 1720px;
@@ -115,7 +111,12 @@ section.journal .circleBox{
     z-index: -1;
 }
 
-section.journal .svgAni path{
+section.journal .inner .box .img{
+    padding-top: 100px;
+}
+
+
+.circleBox .svgAni path{
     fill: none;
     stroke: #f5f5f5;
     stroke-width: 25;
@@ -192,4 +193,113 @@ section.journal .inner .box .moreBtn{
     100%{
         stroke-dashoffset: 0;
     }
+}
+
+
+section.service{
+    padding: 190px 0;
+}
+
+section.service .inner .box.design{
+    width: 45%;
+    margin-top: -40%;
+    padding-top: 60px;
+    border-top: 1px solid #c4e5ea;
+}
+
+section.service .inner .box.design .tit{
+    font-size: 30px;
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
+
+section.service .inner .box .img{
+    margin-top: 90px;
+}
+
+section.customer{
+    padding: 190px 0;
+    background: url(../img/img_04.jpg) no-repeat;
+    text-align: center;
+}
+
+section.customer .tit{
+    color: #fff;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+section.customer .txt{
+    color: #777;
+}
+
+
+section.team {
+    padding: 190px 0;
+    position: relative;
+}
+
+section.team .circleBox{
+    position: absolute;
+    width: 700px;
+    top: -50px;
+    left: 20%;
+    z-index: -1;
+}
+
+section.team .inner .box.left{
+    text-align: left;
+    padding-right: 80px;
+    box-sizing: border-box;
+}
+
+section.team .inner .box .img{
+    margin-top: 100px;
+}
+
+footer{
+    width: 1320px;
+    margin: auto;
+}
+
+footer .top .tit{
+    color: #e6e6e6;
+    font-size: 62px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+footer .bottom{
+    border-top: 1px solid #e6e6e6;
+    padding: 40px 0 100px;
+}
+
+footer .bottom ul{
+    overflow: hidden;
+}
+
+footer .bottom ul li:nth-child(1){
+    width: 31%;
+    font-size: 28px;
+    color: #000;
+    line-height: 1.1;
+}
+
+footer .bottom ul li{
+    float: left;
+    width: 23%;
+    color: #aaa;
+    font-size: 12px;
+    line-height: 2;
+}
+
+footer .bottom ul li b:nth-child(1){
+    display: inline-block;
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 12px;
+}
+
+footer .bottom ul li b{
+    font-weight: normal;
 }
