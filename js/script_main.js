@@ -27,3 +27,22 @@ $(function(){
         once:true
     })
 });
+
+/**
+ * 배경색 변경
+ */
+ $(window).on('scroll resize', function () {
+    var scrollTop = $(document).scrollTop();
+    bgColor();
+    function bgColor() {
+        if (scrollTop > 1400) {
+            $('body').addClass('on');
+        } else {
+            $('body').removeClass('on');
+        }
+
+        if (scrollTop > 2700) {
+            $('body').removeClass('on');
+        }
+    }
+});

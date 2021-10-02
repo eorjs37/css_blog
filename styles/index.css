@@ -50,3 +50,89 @@ body{
     font-family: 'Dancing Script', cursive;
 }
 
+/*
+ 공통 .tit 애니메이션
+*/
+.tit.motion span{
+    transform: translate3d(0,0,0)skewY(0deg);
+}
+
+.tit.motion span b{
+    display: block;
+    animation-name: textAni;
+    animation-duration: 1.3s;
+}
+
+@keyframes textAni{
+    0%{
+        opacity: 0;
+    }
+
+    30%{
+        opacity: 0;
+        transform: translate3d(0,10px,0)skewY(8deg);
+        transform-origin: top left;
+    }
+
+}
+
+/*
+ visiual txt 애니메이션
+*/
+.txt.motion p{
+    transform: translate3d(0,0,0)skewY(0deg);
+}
+.txt.motion p b { 
+    display: block;
+    animation-name: textAni;
+    animation-duration: 1.3s;
+}
+
+.img.motion {
+    position: relative;
+    animation-name: imgAni;
+    animation-duration: 1s;
+}
+
+@keyframes imgAni {
+    0%{
+        transform: translateY(50px);
+    }
+}
+
+.img.motion:after{
+    content: '';
+    width: 100%;
+    height: 0%;
+    background: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation-name: mask;
+    animation-duration: 1.2s;
+}
+
+@keyframes mask{
+    0%{
+        height: 90%;
+    }
+}
+
+
+section.team .img.motion:after{
+    display: none;
+}
+
+/* section.service 배경색 애니 */
+body{
+    transition: all 0.4s;
+}
+
+body.on{
+    background: #e8fcff; 
+    transition: all 0.4s;
+}
+
+section.service .img.motion:after{
+    background: #e8fcff; 
+}
