@@ -68,3 +68,42 @@ span.bar {
     color: #555;
     padding: 0 10px;
 }
+
+/* 반응형 웹 제작 */
+
+/* PC 모드 */
+@media screen and (max-width:1720px){
+    .innerheader{
+        max-width: 100%;
+        padding: 0 30px;
+        box-sizing: border-box;
+    }
+
+    .innerheader .mainMenu .sns {
+        margin-left: 200px;
+    }
+}
+
+/* 1024 이하 테블릿 */
+@media screen and (max-width: 1000px) {
+    .innerheader{
+        height: 80px;
+        line-height: 80px;
+    }
+
+    .innerheader .mainMenu{
+        width: 0;
+        height: 0;
+        opacity: 0;
+        display: none;
+    }
+}
+
+/* 모바일해상도 320px */
+@media screen and (max-width: 768px) {
+    .innerheader{
+        height: 60px;
+        line-height: 60px;
+        padding: 0 20px;
+    }
+}
